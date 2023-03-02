@@ -1,10 +1,26 @@
 module.exports = {
-  content: ['./dist/*.html'],
+  content: ["./dist/*.html"],
   theme: {
-    extend: {},
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    extend: {
+      colors: {
+        strongCyan: "hsl(171,66%,44%)",
+        lightBlue: "hsl(233,100%,69%)",
+        darkGreyishBlue: "hsl(210,10%,33%)",
+        grayishBlue: "hsl(201,11%,66%)",
+      },
+      fontFamily: {
+        sans: ["Bai jamjuree", "sans-serif"],
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
